@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnitConverter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 id="header">
+        <a href="../Main/mainindex.html" id="homeLink">Home</a>
+  </h2>
+    <br>
+  <h1> Unit Converter</h1>
+  <br>
+  <div id="mainContainer">
+
+  <label for="conversionSelect">Unit conversion:</label>
+  <select id="conversionSelect">
+    <option value="ctoF">Celsius to Fahrenheit</option>
+    <option value="ftoC">Fahrenheit to Celsius</option>
+    <option value="mtoF">Meters to Feet</option>
+    <option value="ftoM">Feet to Meters</option>
+  </select>
+<br>
+    <label for="input">Input</label>
+    <input id="input" name="input" type="number">
+    <button onclick="checkConversion()">Convert</button>
+    <button onclick="clearValues()">Clear all</button>
+<br>
+<label for="output">Output:</label>
+  <input id="output" name="output" type="number" readonly>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

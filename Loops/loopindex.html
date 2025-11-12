@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <link rel="stylesheet" href="loopstyle.css">
+</head>
+<body>
+  <h2 id="header">
+        <a href="../Main/mainindex.html" id="homeLink">Home</a>
+  </h2><br>
+    <h1>Loops</h1><br>
+  <div id="mainContainer">
+  <label for="operationSelect">Operation:</label>
+  <select id="operationSelect">
+    <option value="factorial">Factorial</option>
+    <option value="sum">Sum</option>
+    <option value="average">Average</option>
+  </select>
+    <label for="input">Input</label>
+    <input id="input" name="input" type="number">
+
+<label for="output">Output:</label>
+  <input id="output" name="output" type="number" readonly>
+
+  <button onclick="check()">Go</button>
+  <button onclick="clearValues()">Clear all</button>
+</div>
+  <script src="loopscript.js"></script>
+</body>
+</html>
