@@ -1,8 +1,6 @@
-// Wait for the page to load before initializing
 window.addEventListener("DOMContentLoaded", () => {
   initGUI();
 
-  // Button listeners
   document.getElementById("addProfile").addEventListener("click", addProfile);
   document.getElementById("clearBtn").addEventListener("click", clearInputs);
   document.getElementById("deleteButton").addEventListener("click", deleteProfile);
@@ -10,13 +8,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
 let gui = [];
 
-// Initialize (optional, clears data)
 function initGUI() {
   gui = [];
   showGUI();
 }
 
-// Add new employee to payroll
 function addProfile() {
   const employeedescinput = {
     name: document.getElementById("nameInput").value,
@@ -25,13 +21,11 @@ function addProfile() {
     deduc: parseFloat(document.getElementById("deducInput").value),
   };
 
-  // Basic validation
   if (!employeedescinput.name) {
     alert("Please enter a name.");
     return;
   }
 
-  // Compute gross pay and net pay
   employeedescinput.gross = employeedescinput.daysWorked * employeedescinput.rate;
   employeedescinput.net = employeedescinput.gross - employeedescinput.deduc;
 
@@ -39,7 +33,6 @@ function addProfile() {
   showGUI();
 }
 
-// Display payroll table
 function showGUI() {
   const tbody = document.getElementById("payrollBody");
   tbody.innerHTML = "";
@@ -60,7 +53,6 @@ function showGUI() {
   });
 }
 
-// Clear input boxes only
 function clearInputs() {
   if (confirm("Clear all inputs?")) {
     document.getElementById("nameInput").value = "";
@@ -70,7 +62,6 @@ function clearInputs() {
   }
 }
 
-// Delete a record by number
 function deleteProfile() {
   const num = parseInt(document.getElementById("number").value, 10);
 
