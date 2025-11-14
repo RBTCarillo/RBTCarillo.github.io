@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image:url(bg.jpg);
+}
 #header {
   background-color: black;
   margin: 0;

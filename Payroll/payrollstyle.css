@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image:url(bg.jpg);
+}
+
 /*Header*/
 #header {
   background-color: black;
@@ -13,6 +17,7 @@
   height: 50px;
   text-align: left;
 }
+
 
 #homeLink {
   color: white;

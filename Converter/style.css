@@ -13,6 +13,10 @@
   text-align: left;
 }
 
+body {
+  background-image:url(bg.jpg);
+}
+
 #homeLink {
   color: white;
   text-decoration: none;
